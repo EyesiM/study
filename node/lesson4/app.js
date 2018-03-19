@@ -42,8 +42,6 @@ app.get('/', function (req, sres, next) {
                     comment1: $('.reply_content').eq(0).text().trim(),
                 });
             })
-            // console.log('data:');
-            // console.log(topics)
             sres.send(topics)
         })
         topicUrls.forEach(function(topicUrl) {
